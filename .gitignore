@@ -163,3 +163,5 @@ cython_debug/
 
 # 忽略各种文件夹下codex AGENRS.md
 AGENTS.md
+
+node_modules/

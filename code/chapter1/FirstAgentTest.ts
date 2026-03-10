@@ -120,13 +120,10 @@ class OpenAICompatibleClient {
 
 async function main() {
   // --- 1. 配置LLM客户端 ---
-  // const API_KEY = "YOUR_API_KEY";
-  // const BASE_URL = "YOUR_BASE_URL";
-  // const MODEL_ID = "YOUR_MODEL_ID";
-  const API_KEY = "sk-e9bef397609a4896b8ecca355c35cc12"
-  const BASE_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1"
-  const MODEL_ID = "qwen-plus"
-  process.env.TAVILY_API_KEY = "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";
+  const API_KEY = "YOUR_API_KEY";
+  const BASE_URL = "YOUR_BASE_URL";
+  const MODEL_ID = "YOUR_MODEL_ID";
+  process.env.TAVILY_API_KEY = "TAVILY_API_KEY";
 
   const llm = new OpenAICompatibleClient(MODEL_ID, API_KEY, BASE_URL);
 

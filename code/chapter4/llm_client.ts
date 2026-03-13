@@ -47,10 +47,11 @@ export class HelloAgentsLLM {
       const chunks: string[] = [];
       for await (const chunk of stream) {
         const content = chunk.choices[0]?.delta?.content ?? "";
-        // process.stdout.write(content);
+        // console.log
+        process.stdout.write(content);
         chunks.push(content);
       }
-      // console.log();
+      console.log();
       return chunks.join("");
     } catch (e) {
       console.log(`❌ 调用LLM API时发生错误: ${e}`);
